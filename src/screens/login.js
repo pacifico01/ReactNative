@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { View, Text, StyleSheet, Alert } from 'react-native'
 import FormInput from '../components/FormInput'
 import PrimaryButton from '../components/PrimaryButton'
-import Icon from 'react-native-vector-icons/FontAwesome'
 import { ROUTES } from '../utils'
 
 const Login = ({ navigation }) => {
@@ -68,7 +67,7 @@ const Login = ({ navigation }) => {
         placeholder="Enter your password"
         secureTextEntry
       />
-        <Icon name="rocket" size={30} color="#900" />
+    
       <PrimaryButton title={loading ? 'Signing in...' : 'Sign In'} onPress={handleSubmit} disabled={loading || !canSubmit} />
     </View>
   )
