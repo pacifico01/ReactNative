@@ -19,10 +19,6 @@ const Login = ({ navigation }) => {
 
   // effects
   useEffect(() => {
-    // example side-effect: simple form field debug logging
-    // keep effects small and focused; this runs when email or password changes
-    // (In production, remove or gate with a debug flag)
-    // console.debug('Login form state', { email, passwordLength: password.length })
   }, [email, password])
 
   // handlers
